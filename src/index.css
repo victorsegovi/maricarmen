@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+.orb-1{
+    top: 0;
+    left: 0;
+    animation: orb-1 infinite 100s;
+    z-index: 0;
+
+}
+
+.orb-2{
+    bottom: 0;
+    right: 0;
+    animation: orb-2 infinite 100s;
+    z-index: 0;
+
+}
+
+.orb-3{
+    bottom: 70%;
+    right: 70%;
+    animation: orb-3 infinite 100s;
+    z-index: 0;
+
+}
+
+@keyframes orb-1 {
+    0%{
+        top: 0;
+        left: 0;
+    }
+
+    50%{
+        top: 100%;
+        left: 30%;
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes orb-2 {
+    0%{
+        bottom: 0;
+        right: 0;
+    }
+
+    50%{
+        bottom: 100%;
+        right: 30%;
+    }
+
+    100%{
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@keyframes orb-3 {
+    0%{
+        bottom: 70%;
+        right: 70%;
+    }
+
+    50%{
+        bottom: 10%;
+        right: 0;
+    }
+
+    75%{
+        bottom: 100%;
+        right: 0;
+    }
+
+    100%{
+        bottom: 70%;
+        right: 70%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .desktop{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .bg-pattern{
+        background-image: url("./bg-image.png");
+    }
+}
